@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MI 349: JavaScript Sound Board</title>
+</head>
+<body>
+    <div class="frame">
+        <section class="header">
+            <h1 class="title">JavaScript Sound Board</h1>
+            <p>Pick from one of the three sounds.</p>
+        </section>
+        <div class="buttons">
+            <button class="btn" id="btn-airplane" onmouseenter="soundboard('airplane_chime.wav')" onclick="soundboard('airplane_chime.wav')">Airplane Chime</button>
+            <button class="btn" id="btn-applause" onmouseenter="soundboard('applause.wav')" onclick="soundboard('applause.wav')">Applause</button>
+            <button class="btn" id="btn-baby" onmouseenter="soundboard('baby_cry.wav')" onclick="soundboard('baby_cry.wav')">Baby Crying</button>
+        </div>
+    </div>
+    <script src="soundboard.js"></script>
+</body>
+</html>
